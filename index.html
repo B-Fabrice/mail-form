@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mail Form</title>
+</head>
+<body>
+  <div class="wrapper">
+    <fieldset>
+      <form onsubmit="handleSubmit(event)">
+        <h2>Form</h2>
+
+        <div class="message"></div>
+        
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" name="email" required placeholder="Enter email address">
+        </div>
+
+        <div class="input-field">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" required placeholder="Enter phone number" pattern="\+[0-9]{7,15}">
+        </div>
+
+        <div class="input-field">
+          <label for="name">Name</label>
+          <input type="text" name="name" required placeholder="Enter Name">
+        </div>
+
+        <div class="input-field">
+          <label for="address">Address</label>
+          <input type="address" name="address" required placeholder="Enter phone number">
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </fieldset>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
